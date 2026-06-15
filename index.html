@@ -12,10 +12,16 @@
         <h2>Buscar contato</h2>
         <label for="busca-nome">Nome:</label>
         <input 
+            type="text"
             id="buscar-nome"
-            onkeyup="buscarContato()"
+            placeholder="Digite o nome para buscar"
         >
         <button onclick="buscarContato()">Buscar</button>
+        <button 
+            type="button" 
+            onclick="limparBusca()">
+            Limpar
+        </button>
     </div>
     <div>
         <h2>Novo Contato</h2>
@@ -23,22 +29,22 @@
             
             <label>
                 Nome:
-                <input type="text" id="nome" required>
+                <input type="text" id="nome" placeholder="Nome completo" required>
             </label>
             
             <label>
                 E-mail:
-                <input type="email" id="email" required>
+                <input type="email" id="email" placeholder="exemplo@email.com" required>
             </label>
 
             <label>
                 Telefone:
-                <input type="text" id="telefone" required>
+                <input type="text" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
             </label>
 
             <label>
                 Observação:
-                <textarea id="obs"></textarea>
+                <textarea id="obs" placeholder="Área de texto reservada a observações."></textarea>
             </label>
             
             <button type="submit">Salvar</button>

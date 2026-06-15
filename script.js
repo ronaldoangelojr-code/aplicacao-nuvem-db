@@ -304,6 +304,19 @@ function cancelarEdicao(){
 
 }
 
+function limparBusca(){
+
+
+    document
+        .getElementById("buscar-nome")
+        .value = "";
+
+
+    carregarContatos();
+
+
+}
+
 document
     .getElementById("form-contato")
     .addEventListener(
