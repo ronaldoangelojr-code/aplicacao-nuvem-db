@@ -74,17 +74,14 @@ async function carregarContatos(nome = ""){
 
             <td>${contato.email}</td>
 
+            <td>
+                ${contato.obs ?? ""}
+            </td>
 
             <td>
                 ${new Date(contato.dtcontato)
                 .toLocaleDateString("pt-BR")}
             </td>
-
-
-            <td>
-                ${contato.obs ?? ""}
-            </td>
-
 
             <td>
                 <button onclick="editarContato(${contato.id})">
