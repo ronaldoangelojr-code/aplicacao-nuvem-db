@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Contatos</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <h1>Gerenciamento de Contatos</h1>
-    <div>
+    <div>    
+        <h1>Gerenciamento de Contatos</h1>
         <h2>Buscar contato</h2>
         <label for="busca-nome">Nome:</label>
         <input 
@@ -37,11 +38,11 @@
 
             <label>
                 Observação:
-                <textarea type="text" id="obs"></textarea>
+                <textarea id="obs"></textarea>
             </label>
             
             <button type="submit">Salvar</button>
-            <button type="submit">Cancelar</button>
+            <button type="button" onclick="cancelarEdicao()">Cancelar</button>
         
         </form>    
     </div>

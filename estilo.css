@@ -1,0 +1,227 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+
+h1, h2 {
+    color: #222;
+}
+
+
+/* Área principal */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+
+
+/* Formulários */
+
+form {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+
+
+/* Botões */
+
+button {
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    background-color: #2563eb;
+    color: white;
+
+}
+
+
+button:hover {
+
+    background-color: #1d4ed8;
+
+}
+
+
+
+button[type="button"] {
+
+    background-color: white;
+    color: black;
+    border: 1px #2563eb solid;
+
+}
+
+button[type="button"]:hover{
+    
+    background-color: #1d4ed8;
+    color: white;
+}
+
+
+
+
+/* Busca */
+
+#buscar-nome {
+
+    width: 300px;
+    display: inline-block;
+
+}
+
+
+
+.buscar-area {
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* Tabela */
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+
+    background: white;
+
+}
+
+
+
+thead {
+
+    background-color: #2563eb;
+    color: white;
+
+}
+
+
+
+th,
+td {
+
+    padding: 12px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #ddd;
+
+}
+
+
+
+tbody tr:hover {
+
+    background-color: #f1f5f9;
+
+}
+
+
+
+/* Botões dentro da tabela */
+
+td button {
+
+    padding: 6px 10px;
+
+    font-size: 14px;
+
+}
+
+
+
+td button:first-child {
+
+    background-color: #f59e0b;
+
+}
+
+
+td button:last-child {
+
+    background-color: #dc2626;
+
+}
+
+
+
+/* Responsividade */
+
+@media(max-width: 700px){
+
+
+    body {
+        padding: 15px;
+    }
+
+
+    table {
+
+        display: block;
+        overflow-x: auto;
+
+    }
+
+
+    #buscar-nome {
+
+        width: 100%;
+
+    }
+
+}

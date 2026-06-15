@@ -280,6 +280,30 @@ function buscarContato(){
 
 }
 
+function cancelarEdicao(){
+
+
+    // limpa os campos
+    document
+        .getElementById("form-contato")
+        .reset();
+
+
+
+    // sai do modo edição
+    idEditando = null;
+
+
+
+    // volta o texto do botão
+    document.querySelector(
+        "button[type='submit']"
+    ).innerText = "Salvar";
+
+
+
+}
+
 document
     .getElementById("form-contato")
     .addEventListener(
